@@ -35,6 +35,8 @@
 
 
 #import <Availability.h>
+#import <TargetConditionals.h>
+
 #undef weak_delegate
 #if __has_feature(objc_arc_weak) && \
 (TARGET_OS_IPHONE || __MAC_OS_X_VERSION_MIN_REQUIRED >= __MAC_10_8)
